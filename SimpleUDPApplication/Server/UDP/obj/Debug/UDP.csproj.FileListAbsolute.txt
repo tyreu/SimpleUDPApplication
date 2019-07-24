@@ -1,0 +1,7 @@
+C:\Users\semenko-vo\Desktop\UDP\UDP\bin\Debug\UDP.exe.config
+C:\Users\semenko-vo\Desktop\UDP\UDP\bin\Debug\UDP.exe
+C:\Users\semenko-vo\Desktop\UDP\UDP\bin\Debug\UDP.pdb
+C:\Users\semenko-vo\Desktop\UDP\UDP\obj\Debug\UDP.csprojResolveAssemblyReference.cache
+C:\Users\semenko-vo\Desktop\UDP\UDP\obj\Debug\UDP.csproj.CoreCompileInputs.cache
+C:\Users\semenko-vo\Desktop\UDP\UDP\obj\Debug\UDP.exe
+C:\Users\semenko-vo\Desktop\UDP\UDP\obj\Debug\UDP.pdb

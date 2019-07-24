@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RangeMin>-10</RangeMin>
+  <RangeMax>10</RangeMax>
+  <IP>239.0.0.222</IP>
+  <RemotePort>2222</RemotePort>
+  <LocalPort>2222</LocalPort>
+</Configuration>
