@@ -20,10 +20,7 @@ namespace Client
             var processTask = Task.Run(async () =>
             {
                 await foreach (var value in channel.Reader.ReadAllAsync(cts.Token))
-                {
                     calculator.Add(value);
-                    Console.Write($"\rПолучено: {value:N2}, Всего: {calculator.GetStats().Count}");
-                }
             }, cts.Token);
 
             var printTask = Task.Run(() =>
@@ -33,10 +30,7 @@ namespace Client
                     if (Console.ReadKey(true).Key == ConsoleKey.Enter)
                     {
                         var (count, avg, stddev, median, mode) = calculator.GetStats();
-                        if (count > 0)
-                            Console.WriteLine($"\nВсего: {count}, Среднее: {avg:N3}, Ст.откл.: {stddev:N3}, Медиана: {median:N3}, Мода: {mode:N3}");
-                        else
-                            Console.WriteLine("\nНет данных.");
+                        Console.WriteLine($"\nВсего: {count:N0}, Среднее: {avg:N3}, Ст.откл.: {stddev:N3}, Медиана: {median:N3}, Мода: {mode:N3}, Потери/сек: {receiver.LostPacketsPerSecond:N0}");
                     }
                 }
             }, cts.Token);

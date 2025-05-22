@@ -11,6 +11,7 @@ namespace UdpServer
         private readonly Random _random = new();
         private readonly Configuration _config;
         private long _bytesSent;
+        private long _counter;
 
         public Server(string configPath)
         {
@@ -22,13 +23,17 @@ namespace UdpServer
 
         public async Task StartAsync(CancellationToken token)
         {
+            var buffer = new byte[16];
             while (!token.IsCancellationRequested)
             {
                 double value = GenerateQuote();
-                byte[] payload = BitConverter.GetBytes(value);
-                int sent = await _udpClient.SendAsync(payload, payload.Length, _remoteEndPoint);
+                BitConverter.TryWriteBytes(buffer.AsSpan(0, 8), value);
+                BitConverter.TryWriteBytes(buffer.AsSpan(8, 8), _counter);
+
+                int sent = await _udpClient.SendAsync(buffer, buffer.Length, _remoteEndPoint);
                 Interlocked.Add(ref _bytesSent, sent);
                 Console.Write($"\rОтправлено: {_bytesSent} байт");
+                _counter++;
             }
         }
 
