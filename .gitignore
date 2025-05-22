@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SimpleUDPApplication/Client/.vs
+/SimpleUDPApplication/Client/Client/bin/
+/SimpleUDPApplication/Client/Client/bin/Debug
+/SimpleUDPApplication/Client/Client/obj/
+/SimpleUDPApplication/Client/Client/obj/Debug
+/SimpleUDPApplication/Server/.vs
+/SimpleUDPApplication/Server/Server/bin/
+/SimpleUDPApplication/Server/Server/obj/
+/.vs

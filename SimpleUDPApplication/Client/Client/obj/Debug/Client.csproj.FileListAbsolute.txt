@@ -1,7 +1,0 @@
-C:\Users\semenko-vo\Desktop\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
-C:\Users\semenko-vo\Desktop\Client\Client\bin\Debug\Client.exe.config
-C:\Users\semenko-vo\Desktop\Client\Client\bin\Debug\Client.exe
-C:\Users\semenko-vo\Desktop\Client\Client\bin\Debug\Client.pdb
-C:\Users\semenko-vo\Desktop\Client\Client\obj\Debug\Client.exe
-C:\Users\semenko-vo\Desktop\Client\Client\obj\Debug\Client.pdb
-C:\Users\semenko-vo\Desktop\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
